@@ -219,6 +219,7 @@ img {
   }
 
   header {
+    position: relative;
     height: auto;
   }
 
@@ -255,12 +256,5 @@ img {
     margin: 0;
     margin-top: 25px;
     width: 100%;
-  }
-}
-
-@media (max-height: 700px) {
-  h1,
-  h2 {
-    font-size: 20px;
   }
 }
