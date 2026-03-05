@@ -12,7 +12,7 @@
   --primary-color: #ffdbe5;
   --secondary-color: #f4bbc9;
   --tertiary-color: #bb294e;
-  --quartinary-color: #fff6e9;
+  --quartinary-color: #6c0820;
 
   --font-size-s: 0.9rem;
   --font-size-n: 1rem;
@@ -73,8 +73,9 @@ header .navbar {
   border-radius: var(--border-radius-rectangle);
   font-size: var(--font-size-m);
   background: var(--secondary-color);
-  color: var(--dark-color);
   transition: 0.3s ease;
+  color: var(--quartinary-color);
+  font-weight: bold;
 }
 
 .navbar .nav-menu .nav-link:hover {
@@ -146,6 +147,8 @@ ul {
   background-color: var(--secondary-color);
   border: 2px solid transparent;
   transition: 0.3s ease;
+  color: var(--quartinary-color);
+  font-weight: bold;
 }
 
 .hero-section .hero-details .button:hover {
@@ -189,7 +192,7 @@ img {
 
 /* Responsive styling */
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1140px) {
   :root {
     --font-size-m: 1rem;
     --font-size-l: 1.3rem;
@@ -208,7 +211,6 @@ img {
 
   .navbar .nav-menu .nav-link {
     background: none;
-    color: #7b1d26;
   }
 
   header .navbar {
@@ -217,7 +219,6 @@ img {
   }
 
   header {
-    position: static;
     height: auto;
   }
 
@@ -244,6 +245,10 @@ img {
 
   .hero-section .section-content .hero-details .description {
     text-align: center;
+  }
+
+  .hero-section .section-content .hero-details .button {
+    font-weight: bold;
   }
 
   .hero-image-wrapper .hero-image {
