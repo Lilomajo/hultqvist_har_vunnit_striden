@@ -126,7 +126,7 @@ ul {
 
 .hero-section .hero-details .subtitle {
   margin-top: 8px;
-  max-width: 70%;
+  max-width: 80%;
   font-size: var(--font-size-xl);
   color: var(--dark-color);
 }
@@ -134,7 +134,7 @@ ul {
 .hero-section .hero-details .description {
   font-size: var(--font-size-m);
   color: var(--dark-color);
-  max-width: 70%;
+  max-width: 80%;
   margin: 24px 0 40px;
   line-height: 2rem;
 }
@@ -208,7 +208,7 @@ img {
 
   .navbar .nav-menu .nav-link {
     background: none;
-    color: var(--dark-color);
+    color: #7b1d26;
   }
 
   header .navbar {
@@ -223,6 +223,10 @@ img {
 
   .other-page .hero-section {
     padding-top: 0px;
+  }
+
+  .home-page .hero-section .section-content {
+    justify-content: initial;
   }
 
   .hero-section .section-content {
@@ -244,7 +248,7 @@ img {
 
   .hero-image-wrapper .hero-image {
     margin: 0;
-    margin-top: 24px;
+    margin-top: 25px;
     width: 100%;
   }
 }
