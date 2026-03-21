@@ -276,16 +276,17 @@ img {
 
   .other-page .hero-section .hero-details .description-wrapper {
     flex-direction: column;
+    align-items: center;
   }
 
   .other-page .hero-section .hero-details .description-wrapper .hero-image {
-    width: 330px;
+    max-width: 330px;
   }
 
   .other-page .hero-section .hero-details .description {
     width: 390px;
+    padding-left: 0px !important;
   }
-
   .hero-section .section-content .hero-details .button {
     font-weight: bold;
   }
