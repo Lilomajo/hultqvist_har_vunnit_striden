@@ -28,19 +28,37 @@
   --site-max-width: 1300px;
 }
 
+.other-page {
+  background-color: var(--primary-color);
+  min-height: 100vh;
+  background-image: url(""), url("");
+  background-repeat: no-repeat, no-repeat;
+  background-position:
+    left bottom,
+    right bottom;
+  background-attachment: fixed;
+}
+
+.home-page {
+  background-color: var(--primary-color);
+  min-height: 100vh;
+  background-image: url("");
+  background-repeat: no-repeat;
+  background-position: left top;
+}
+
 /* Navbar styling */
 
 .section-content {
-  margin: 0 auto;
+  margin: 30px auto;
   padding: 0 20px;
   max-width: var(--site-max-width);
 }
 
 header {
-  position: fixed;
+  background-color: var(--primary-color);
   width: 100%;
   z-index: 5;
-  background: var(--primary-color);
   padding: 10px;
 }
 
@@ -52,15 +70,16 @@ header .navbar {
 }
 
 .navbar .nav-logo {
-  border: solid 1px;
   border-radius: var(--border-radius-circle);
   border-color: var(--dark-color);
+  max-width: 150px;
+  max-height: 100px;
 }
 
 .navbar .nav-logo .logo-text {
-  color: var(--dark-color);
-  font-size: var(--font-size-xl);
-  font-family: "Dancing Script";
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
 }
 
 .navbar .nav-menu {
@@ -95,18 +114,15 @@ ul {
 
 .hero-section {
   min-height: 100vh;
-  background: var(--primary-color);
 }
 
 .other-page .hero-section {
-  padding-top: 130px;
   min-height: 100vh;
-  background: var(--primary-color);
 }
 
 .home-page .hero-section .section-content {
-  min-height: 100vh;
   display: flex;
+  gap: 50px;
   align-items: center;
   color: var(--white-color);
   justify-content: space-between;
@@ -121,21 +137,48 @@ ul {
 
 .hero-section .hero-details .title {
   font-size: var(--font-size-xxl);
-  color: var(--dark-color);
+  color: var(--tertiary-color);
   font-family: "Dancing Script";
+}
+
+.home-page .hero-section .hero-details {
+  background-color: var(--primary-color);
+  border-radius: 16px;
+  box-shadow: var(--box-shadow);
+  padding: 20px;
+}
+
+.other-page .hero-section .hero-details {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.other-page .hero-section .hero-details .card-wrap {
+  background-color: var(--primary-color);
+  border-radius: 16px;
+  box-shadow: var(--box-shadow);
+  padding: 20px;
 }
 
 .hero-section .hero-details .subtitle {
   margin-top: 8px;
   margin-bottom: 8px;
   font-size: var(--font-size-xl);
-  color: var(--dark-color);
+  color: var(--quartinary-color);
   display: flex;
   align-items: center;
   gap: 10px;
 }
 
-.line {
+.other-page .subtitle::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background-color: var(--secondary-color);
+}
+.other-page .subtitle::before {
+  content: "";
   flex: 1;
   height: 1px;
   background-color: var(--secondary-color);
@@ -149,13 +192,18 @@ ul {
   line-height: 2rem;
 }
 
+.other-page .hero-section .hero-details .description {
+  text-align: center;
+}
+
 .hero-section .hero-details .description-wrapper {
   display: flex;
   justify-content: start;
+  gap: 30px;
 }
 
 .hero-section .hero-details .button {
-  padding: 10px 26px;
+  padding: 10px 30px;
   border-radius: var(--border-radius-rectangle);
   font-size: var(--font-size-m);
   color: var(--dark-color);
@@ -172,11 +220,20 @@ ul {
   background-color: var(--secondary-color);
 }
 
+.home-page .hero-image-wrapper {
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+}
+
 .other-page .hero-image-wrapper .hero-image {
+  padding: 0;
   max-width: 500px;
   height: 300px;
   object-fit: cover;
+  border-radius: 16px;
   box-shadow: var(--box-shadow);
+  background: none;
 }
 
 .home-page .hero-image-wrapper .hero-image {
@@ -197,11 +254,18 @@ ul {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  background: var(--primary-color);
-  align-items: center;
+  align-items: center top;
+  background-color: var(--primary-color);
 }
 
 img {
+  padding: 5px;
+  border-radius: var(--border-radius-rectangle);
+  max-width: 100%;
+}
+
+.image-wrapper img {
+  box-shadow: var(--box-shadow);
   padding: 5px;
   max-width: 100%;
 }
@@ -222,6 +286,10 @@ img {
     --font-size-xxl: 1.8rem;
 
     --site-max-width: 900px;
+  }
+
+  body {
+    background-image: none;
   }
 
   .navbar .nav-menu {
@@ -273,9 +341,13 @@ img {
   .hero-section .section-content .hero-details .title {
     max-width: 330px;
   }
+  .hero-section .section-content .hero-details .subtitle {
+    text-align: center;
+  }
 
   .other-page .hero-section .hero-details .description-wrapper {
     flex-direction: column;
+    gap: 0px;
     align-items: center;
   }
 
