@@ -337,6 +337,10 @@ img {
     width: 100%;
   }
 
+  .hero-section .hero-details .description {
+    line-height: 2rem;
+  }
+
   .hero-section .section-content .hero-details .description {
     text-align: center;
   }
