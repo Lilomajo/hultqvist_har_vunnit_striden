@@ -2,14 +2,14 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-family: 'Inter', sans-serif;
 }
 
-/*Pseudo class to set color theme*/
+/*Pseudo class to set color theme f3e1e4*/
 :root {
   --white-color: #fff;
   --dark-color: #000;
-  --primary-color: #ffdbe5;
+  --primary-color: #fff5f6;
   --secondary-color: #f4bbc9;
   --tertiary-color: #bb294e;
   --quartinary-color: #6c0820;
@@ -28,6 +28,54 @@
   --site-max-width: 1300px;
 }
 
+
+.new-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.rectangle-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+  gap: 70px;
+}
+
+
+.orange-rec {
+  background-color: #ff8a00;
+  border-radius: var(--border-radius-circle);
+  width: 50px;
+  height: 50px;
+  opacity: 0.8;
+}
+.pink-rec {
+  background-color: #ffb8c6;
+  border-radius: var(--border-radius-circle);
+  width: 50px;
+  height: 50px;
+  opacity: 0.8;
+}
+.coral-rec {
+  background-color: #fe0419;
+  border-radius: var(--border-radius-circle);
+  width: 50px;
+  height: 50px;
+  opacity: 0.8;
+}
+
+.rec-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+strong {
+  color: var(--tertiary-color);
+}
 .other-page {
   background-color: var(--white-color);
   min-height: 100vh;
@@ -177,6 +225,10 @@ ul {
 }
 
 .other-page .hero-section .hero-details .card-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
   background-color: var(--primary-color);
   border-radius: 16px;
   box-shadow: var(--box-shadow);
@@ -203,18 +255,20 @@ ul {
 .hero-section .hero-details .description {
   font-size: var(--font-size-m);
   color: var(--dark-color);
-  max-width: 80%;
+  max-width: 100%;
   line-height: 3rem;
   text-align: center;
 }
-
-.other-page .hero-section .hero-details .description {
-  text-align: center;
+.home-page .hero-section .hero-details .description {
+  margin-top: 20px;
+  max-width: 80%;
 }
+
 
 .hero-section .hero-details .description-wrapper {
   display: flex;
-  justify-content: start;
+  justify-content: space-between;
+  align-items: center;
   gap: 30px;
 }
 
@@ -223,7 +277,7 @@ ul {
   align-items: center;
   justify-content: center;
   gap: 10px;
-  margin-top: 20px;
+  margin: 20px 0 ;
 }
 
 .hero-section .hero-details .button {
@@ -267,16 +321,17 @@ ul {
   align-items: center;
 }
 
-.home-page .hero-image-wrapper .hero-image {
+.home-page .hero-image {
+  margin-top: 20px;
   max-width: 500px;
-  margin-right: 30px;
-  height: 300px;
   object-fit: cover;
   box-shadow: var(--box-shadow);
 }
 
 .google-maps {
   color: var(--tertiary-color);
+  font-weight: bold;
+  
 }
 
 /*Bilder styling */
@@ -360,6 +415,10 @@ img {
     margin-top: 0px;
   }
 
+  .home-page .hero-image {
+    max-width: 300px;
+  }
+
   .hero-section .section-content {
     flex-direction: column;
     align-items: center;
@@ -377,6 +436,7 @@ img {
   .hero-section .hero-details .description {
     line-height: 2rem;
     text-align: center;
+    max-width: 100%;
   }
 
   .hero-section .section-content .hero-details .subtitle {
