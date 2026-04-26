@@ -405,7 +405,10 @@ img {
     position: relative;
     height: auto;
   }
-
+  
+  .rectangle-wrap {
+    gap: 30px;
+  }
   .other-page .hero-section {
     padding-top: 0px;
   }
