@@ -349,6 +349,7 @@ ul {
 .google-maps {
   color: var(--tertiary-color);
   font-weight: bold;
+  text-decoration: underline;
   
 }
 
