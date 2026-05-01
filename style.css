@@ -41,8 +41,9 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     gap: 10px;
+    width: 230px;
 }
 
 .new-wrap {
@@ -248,7 +249,7 @@ ul {
   background-color: var(--primary-color);
   border-radius: 16px;
   box-shadow: var(--box-shadow);
-  padding: 60px;
+  padding: 30px;
 }
 
 .hero-section .hero-details .subtitle {
