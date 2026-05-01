@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Inter', sans-serif;
+  color: #000;
 }
 
 /*Pseudo class to set color theme f3e1e4*/
@@ -28,6 +29,20 @@
   --site-max-width: 1300px;
 }
 
+.wrap_for_card {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 30px;
+}
+
+.kontakt {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
 
 .new-wrap {
   display: flex;
@@ -181,7 +196,7 @@ ul {
   display: flex;
   align-items: center;
   color: var(--white-color);
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .hero-section .hero-details .title {
@@ -238,6 +253,7 @@ ul {
 .hero-section .hero-details .subtitle {
   margin-top: 8px;
   margin-bottom: 8px;
+  font-family: "Dancing Script";
   font-size: var(--font-size-xl);
   color: var(--quartinary-color);
   display: flex;
