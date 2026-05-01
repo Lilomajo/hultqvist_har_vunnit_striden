@@ -6,11 +6,11 @@
   color: #000;
 }
 
-/*Pseudo class to set color theme f3e1e4*/
+/*Pseudo class to set color theme fff5f6 */
 :root {
   --white-color: #fff;
   --dark-color: #000;
-  --primary-color: #fff5f6;
+  --primary-color: #f3e1e4;
   --secondary-color: #f4bbc9;
   --tertiary-color: #bb294e;
   --quartinary-color: #6c0820;
