@@ -31,7 +31,7 @@
 
 .wrap_for_card {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     gap: 30px;
 }
@@ -389,6 +389,10 @@ img {
     --site-max-width: 900px;
   }
 
+  .wrap_for_card {
+    flex-direction: column;
+  }
+
   body {
     background-image: none;
   }
@@ -455,7 +459,7 @@ img {
   .hero-section .hero-details .description {
     line-height: 2rem;
     text-align: center;
-    max-width: 100%;
+    width: 100%;
   }
 
   .hero-section .section-content .hero-details .subtitle {
