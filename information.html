@@ -1,74 +1,211 @@
-<!DOCTYPE html>
+<!doctype html>
 
 <html lang="en-us">
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta charset="utf8"/>
-        <meta name="author" content="Linda Johansson">
-        <meta name="description" content="Web applikation för lisas bröllop">
-        <title>Lisas och Filips Bröllop</title>
-        <link rel="stylesheet" href="style.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">    
-    
-    </head>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf8" />
+    <meta name="author" content="Linda Johansson" />
+    <meta name="description" content="Web applikation för lisas bröllop" />
+    <title>Lisas och Filips Bröllop</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Dancing+Script:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"> 
+  </head>
 
-    <body>
-        <!-- Navbar -->
-        <header>
-            <nav class="navbar section-content">
-                <a href="#" class="nav-logo">
-                    <h2 class="logo-text">L&F</h2>
-                </a>        
-                <ul class="nav-menu">
+  <body class="other-page">
+    <!-- Navbar -->
+    <header>
+      <nav class="navbar section-content">
+        <a href="#" class="nav-logo">
+          <h2 class="logo-text"><img src="photos/ringar_ikon.png" alt="" /></h2>
+        </a>
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link">Home</a>
+          </li>
 
-                    <li class="nav-item">
-                        <a href="index.html" class="nav-link">Home</a>
-                    </li>
+          <li class="nav-item">
+            <a href="brollop.html" class="nav-link">Bröllopsdagen</a>
+          </li>
 
-                    <li class="nav-item">
-                        <a href="brollop.html" class="nav-link">Bröllopsdagen</a>
-                    </li>
+          <li class="nav-item">
+            <a href="information.html" class="nav-link">Information</a>
+          </li>
 
-                    <li class="nav-item">
-                        <a href="information.html" class="nav-link">Information</a>
-                    </li>
+          <li class="nav-item">
+            <a href="bilder.html" class="nav-link">Bilder</a>
+          </li>
 
-                    <li class="nav-item">
-                        <a href="bilder.html" class="nav-link">Bilder</a>
-                    </li>
+          <li class="nav-item">
+            <a href="kontakt.html" class="nav-link">Kontakt</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
 
-                    <li class="nav-item">
-                        <a href="kontakt.html" class="nav-link">Kontakt</a>
-                    </li>
+    <main>
+      <!-- Hero section -->
+      <section class="hero-section">
+        <div class="section-content">
+          <div class="hero-details">
+            <h2 class="title">Klädkod</h2>
 
-                </ul>
-            </nav>
-        </header>
+            <div class="card-wrap">
 
-        <main>
-            <!-- Hero section -->
-            <section class="hero-section">
+              <div class="description-wrapper">
+                <div class="new-wrap">
+                    <p class="description">
+                      Klä dig i något du känner dig fin och bekväm i – det viktigaste för oss är att du trivs.
+                    
+                      Vi ser gärna att män bär <strong>kavaj eller kostym</strong>.
 
-                <div class="section-content">
+                      För kvinnor ber vi vänligen att <strong>undvika vitt, blått och rött</strong>.
 
-                    <div class="hero-details">
-
-                        <h2 class="title">Information</h2>
-
-                        <h3 class="subtitle"></h3>
-
-                        <p class="description">
-                        </p>
-
+                      För dig som vill matcha dagens känsla går bröllopets färgtema i mjuka toner av <strong>orange, korall och rosa</strong>.
+                    </p>
+                    
+                    <div class="rectangle-wrap">
+                      <div class="rec-text">
+                        <div class="orange-rec"></div>
+                        <span><p style="color: #ff8a00; font-family: 'Dancing script'; font-size: 1.5rem;">Orange</p></span>
+                      </div>
+                      <div class="rec-text">
+                        <div class="coral-rec"></div>
+                        <span><p style="color: #fe0419; font-family: 'Dancing script'; font-size: 1.5rem;">Korall</p></span>
+                      </div>
+                      <div class="rec-text">
+                        <div class="pink-rec"></div>
+                        <span><p style="color: #ffb8c6; font-family: 'Dancing script'; font-size: 1.5rem;">Rosa</p></span>
+                      </div>
                     </div>
-
                 </div>
-                
-            </section>
 
-        </main>
+                <div class="hero-image-wrapper">
+                  <img src="photos/aperol.jpg" alt="" class="hero-image" />
+                </div>
+              </div>
+            </div>
+            <h2 class="title">Parkering Under Dagen</h2>
 
+            <div class="card-wrap">
+
+              <div class="description-wrapper">
+                <div class="hero-image-wrapper">
+                  <img class="hero-image" src="photos/faltet.jpg" alt="" />
+                </div>
+
+                <p class="description">
+                  För dig som vill parkera bilen under dagen rekommenderas Östra
+                  torget, Smedjan eller Atollen. Dessa ligger närmast både
+                  kyrkan där vigseln äger rum och festlokalen där mottagningen
+                  kommer att hållas.
+                  Observera att Södra vägen i Jönköping är avstängd för er
+                  som tar den vägen!
+                  <br/>
+                  <strong style="color: #6c0820;">För dig som vill parkera</strong>
+                  <br/><a
+                    class="google-maps"
+                    href="https://www.google.com/maps/place/%C3%96stra+Torget/@57.7806614,14.1777055,395m/data=!3m1!1e3!4m6!3m5!1s0x465a6d95d7d10d2f:0xc7a14be08c493554!8m2!3d57.7807288!4d14.1793052!16s%2Fg%2F11gd67_v2k?entry=ttu&g_ep=EgoyMDI2MDMxOC4xIKXMDSoASAFQAw%3D%3D"
+                    target="_blank"
+                    ><i class="fa fa-map-pin"></i> Östra Torget</a>
+                  (3 minuter gång)
+
+                  <br /><a
+                    class="google-maps"
+                    href="https://www.google.com/maps/place/Smedjans+parkeringshus,/@57.780691,14.1717273,579m/data=!3m2!1e3!4b1!4m6!3m5!1s0x465a6d0000c03dc9:0xbe80c5b3ecd73814!8m2!3d57.7806882!4d14.1743022!16s%2Fg%2F11w233qbjg?entry=ttu&g_ep=EgoyMDI2MDMxOC4xIKXMDSoASAFQAw%3D%3D"
+                    target="_blank"
+                    ><i class="fa fa-map-pin"></i> Smedjan</a
+                  >
+                  (6 minuter gång)
+
+                  <br /><a
+                    class="google-maps"
+                    href="https://www.google.com/maps/place/Parkeringshus+Atollen/@57.7799905,14.1706036,1159m/data=!3m2!1e3!4b1!4m6!3m5!1s0x465a6d94e51597b9:0x6a08167a7dd84ece!8m2!3d57.7799877!4d14.1731785!16s%2Fg%2F11cmx45htx?entry=ttu&g_ep=EgoyMDI2MDMxOC4xIKXMDSoASAFQAw%3D%3D"
+                    target="_blank"
+                    ><i class="fa fa-map-pin"></i> Atollen</a
+                  >
+                  (7 minuter gång)
+                </p>
+              </div>
+            </div>
+
+            <h2 class="title">Ta Dig Kollektivt</h2>
+            <div class="card-wrap">
+
+              <div class="description-wrapper">
+                <p class="description">
+                  För dig som åker kollektivt under dagen finns det flera bra
+                  möjligheter att ta sig till området med buss. Flera
+                  hållplatser ligger i närheten och listas nedan. För långväga
+                  gäster ligger även Jönköping Resecentrum relativt nära, med en
+                  promenad på cirka 14 minuter till kyrkan och festlokalen.
+                  <br />
+                  <strong style="color: #6c0820"
+                    >Närmaste hållplats för dig som åker buss</strong
+                  >
+                  <br /><a class="google-maps" href="" target="_blank"
+                    ><i class="fa fa-subway"></i> Östra Torget</a
+                  >
+                  (4 minuter gång) <br /><a
+                    class="google-maps"
+                    href=""
+                    target="_blank"
+                    ><i class="fa fa-subway"></i> Stadsbiblioteket</a
+                  >
+                  (5 minuter gång) <br /><a
+                    class="google-maps"
+                    href=""
+                    target="_blank"
+                    ><i class="fa fa-subway"></i> Jönköping Östra Centrum</a
+                  >
+                  (7 minuter gång)
+                </p>
+                <div class="hero-image-wrapper">
+                  <img class="hero-image" src="photos/flyga.jpg" alt="" />
+                </div>
+              </div>
+            </div>
+
+            <h2 class="title">Hålla Tal</h2>
+            <div class="card-wrap">
+
+              <div class="description-wrapper">
+                <div class="hero-image-wrapper">
+                  <img src="photos/midsommar.jpg" alt="" class="hero-image" />
+                </div>
+
+                <p class="description">
+                  För dig som vill hålla tal ber vi dig fylla i följande
+                  <a
+                    href="https://forms.gle/NNshpBZyQUk8f6Pf9"
+                    class="google-maps"
+                    >formulär</a
+                  >. Att hålla tal måste innebära att du håller ett ypiskt
+                  vanligt tal, det kan också inefatta någon rolig aktivitet Men
+                  för att visa hänsyn till alla och för att vi inte ska lyssna
+                  på tal hel natten har vi valt att sätta gränser för ett
+                  vanligt tal till ca 5 min. Vill man gå över detta får man
+                  kontakta toastmasters. Kontak uppfigteerna hittar ni under
+                  fliken kontakt.
+                  <strong style="color: #6c0820">Bra att veta</strong>
+                  <br />
+                  <span style="color: #bb294e">Vanligt tal</span> - ca 5 minuter
+                  <br />
+                  <span style="color: #bb294e"
+                    >Längre tal eller aktivitet
+                  </span>
+                  - Kontakta Toastmasters
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
 </html>
-
